@@ -1,0 +1,54 @@
+/* Atelier color system.
+   Flat fields with clean seams — never gradients. */
+:root {
+  /* --- Base palette --- */
+  --atelier-terracotta: #CC5E3C; /* primary */
+  --atelier-saffron:    #E0A23B; /* highlight */
+  --atelier-olive:      #6E7049; /* secondary */
+  --atelier-petrol:     #233B45; /* dark ground */
+  --atelier-clay:       #A4543B; /* deep / hover */
+  --atelier-ink:        #2B2620; /* text */
+  --atelier-muted:      #6F665A; /* muted text */
+
+  /* Surfaces */
+  --atelier-cream:      #FBF7EE;
+  --atelier-paper:      #F4EEE1;
+  --atelier-sand:       #E6DBC4;
+
+  /* Borders (hairlines) */
+  --atelier-border:        #E2D6BF; /* on light */
+  --atelier-border-paper:  #D8CCB4; /* on paper */
+  --atelier-border-dark:   #3A5560; /* on petrol */
+
+  /* On-dark tints */
+  --atelier-on-dark:        #F4EEE1;
+  --atelier-on-dark-muted:  #AFC0C5;
+
+  /* --- Semantic aliases --- */
+  --color-primary:        var(--atelier-terracotta);
+  --color-primary-hover:  var(--atelier-clay);
+  --color-highlight:      var(--atelier-saffron);
+  --color-secondary:      var(--atelier-olive);
+  --color-ground-dark:    var(--atelier-petrol);
+
+  --text-heading:   var(--atelier-ink);
+  --text-body:      #3F3A33;
+  --text-muted:     var(--atelier-muted);
+  --text-on-dark:   var(--atelier-on-dark);
+  --text-on-dark-muted: var(--atelier-on-dark-muted);
+
+  --surface-page:   var(--atelier-paper);
+  --surface-card:   var(--atelier-cream);
+  --surface-white:  #FFFFFF;
+  --surface-sand:   var(--atelier-sand);
+
+  --border-hairline: var(--atelier-border);
+  --border-dark: var(--atelier-border-dark); /* added: no semantic alias shipped in the handoff, needed for hairlines on Ember/petrol grounds */
+
+  /* Categorical order for data viz (saffron reserved for one highlight) */
+  --chart-1: var(--atelier-terracotta);
+  --chart-2: var(--atelier-petrol);
+  --chart-3: var(--atelier-olive);
+  --chart-4: var(--atelier-saffron);
+  --chart-5: var(--atelier-clay);
+}

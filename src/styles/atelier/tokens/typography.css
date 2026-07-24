@@ -1,0 +1,23 @@
+/* Atelier typography.
+   Libre Caslon Display = headlines · Newsreader = body · IBM Plex Mono = labels/data */
+/* --font-display / --font-body / --font-mono are set by next/font in src/lib/fonts.ts
+   (on <html>), not declared here — don't re-add a Google Fonts @import. */
+:root {
+  /* Type scale (role → size / line-height) */
+  --text-display-size: 92px;  --text-display-lh: 0.92;
+  --text-h1-size:      60px;  --text-h1-lh:      1.0;
+  --text-h2-size:      40px;  --text-h2-lh:      1.05;
+  --text-h3-size:      28px;  --text-h3-lh:      1.15;
+  --text-lead-size:    22px;  --text-lead-lh:    1.5;
+  --text-body-size:    17px;  --text-body-lh:    1.65;
+  --text-caption-size: 14px;  --text-caption-lh: 1.5;
+  --text-label-size:   12px;  --text-label-lh:   1.0;
+
+  /* Label / kicker treatment */
+  --label-tracking: 0.16em;
+  --label-transform: uppercase; /* @kind other */
+
+  --weight-mono-regular: 400;
+  --weight-mono-medium:  500;
+  --weight-mono-semibold:600;
+}

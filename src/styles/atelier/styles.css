@@ -1,0 +1,8 @@
+/* Atelier Design System — global entry point (kept as reference/canonical copy).
+   This app imports the token files directly from src/app/globals.css instead of
+   through this file, and fonts are wired via next/font (src/lib/fonts.ts) rather
+   than tokens/fonts.css — so this file isn't @imported anywhere in the app. */
+@import "tokens/fonts.css";
+@import "tokens/colors.css";
+@import "tokens/typography.css";
+@import "tokens/spacing.css";
