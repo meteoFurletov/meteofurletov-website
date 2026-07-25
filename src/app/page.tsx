@@ -1,15 +1,21 @@
 import { Hero } from "./(home)/Hero";
-import { BioTeaser } from "./(home)/BioTeaser";
+import { FactStrip } from "./(home)/FactStrip";
+import { HowIWork } from "./(home)/HowIWork";
+import { ProofStrip } from "./(home)/ProofStrip";
 import { FeaturedProjects } from "./(home)/FeaturedProjects";
-import { ServicesTeaser } from "./(home)/ServicesTeaser";
+import { Notes } from "./(home)/Notes";
+import { ContactBand } from "./(home)/ContactBand";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <BioTeaser />
+      <FactStrip />
+      <HowIWork />
+      <ProofStrip />
       <FeaturedProjects />
-      <ServicesTeaser />
+      <Notes />
+      <ContactBand />
     </main>
   );
 }

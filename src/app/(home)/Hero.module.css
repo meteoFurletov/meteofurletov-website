@@ -1,15 +1,28 @@
-.hero {
+.section {
   background: var(--color-ground-dark);
-  padding: var(--space-9) var(--space-6);
+}
+
+.inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: clamp(44px, 8vw, 96px) clamp(20px, 4vw, 32px) clamp(44px, 7vw, 64px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(32px, 5vw, 64px);
+}
+
+.copy {
+  flex: 999 1 400px;
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+  gap: clamp(16px, 2.5vw, 24px);
 }
 
 .kicker {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  gap: var(--space-3);
   font-family: var(--font-mono);
   font-weight: 500;
   font-size: var(--text-label-size);
@@ -19,8 +32,8 @@
 }
 
 .dot {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: var(--color-highlight);
   flex-shrink: 0;
@@ -28,20 +41,22 @@
 
 .headline {
   font-family: var(--font-display);
-  font-size: clamp(40px, 11vw, var(--text-display-size));
-  line-height: var(--text-display-lh);
+  font-weight: 400;
+  font-size: clamp(38px, 7.4vw, 78px);
+  line-height: 1;
   color: var(--text-on-dark);
-  max-width: 16ch;
+  max-width: 17ch;
+  text-wrap: pretty;
 }
 
-.accent {
+.headline em {
   color: var(--color-highlight);
   font-style: italic;
 }
 
 .lead {
   font-family: var(--font-body);
-  font-size: var(--text-lead-size);
+  font-size: clamp(17px, 2.2vw, 22px);
   line-height: var(--text-lead-lh);
   color: var(--text-on-dark-muted);
   max-width: 46ch;
@@ -50,13 +65,44 @@
 .actions {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
   flex-wrap: wrap;
-  margin-top: var(--space-3);
+  gap: var(--space-4);
+  margin-top: var(--space-2);
 }
 
-@media (max-width: 480px) {
-  .hero {
-    padding: var(--space-8) var(--space-4);
+.portrait {
+  flex: 1 1 300px;
+  max-width: 400px;
+  position: relative;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.badge {
+  position: absolute;
+  left: calc(-1 * var(--space-4));
+  bottom: var(--space-5);
+  background: var(--color-primary);
+  color: var(--surface-card);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: var(--label-tracking);
+  text-transform: uppercase;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+@media (max-width: 560px) {
+  .badge {
+    left: var(--space-3);
   }
 }
