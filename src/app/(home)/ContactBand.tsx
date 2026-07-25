@@ -1,4 +1,4 @@
-import { Mail, Linkedin, ExternalLink } from "lucide-react";
+import { Mail, Link2, ExternalLink } from "lucide-react";
 import styles from "./ContactBand.module.css";
 
 const channels = [
@@ -11,7 +11,7 @@ const channels = [
   {
     label: "linkedin.com/in/meteofurletov",
     href: "https://www.linkedin.com/in/meteofurletov",
-    Icon: Linkedin,
+    Icon: Link2,
     external: true,
   },
   {
